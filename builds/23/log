@@ -1,0 +1,35 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/te/workspace
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/WW0417/Homework.git
+ > git init /var/lib/jenkins/jobs/te/workspace # timeout=10
+Fetching upstream changes from https://github.com/WW0417/Homework.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/WW0417/Homework.git +refs/heads/*:refs/remotes/Homework/* # timeout=60
+ > git config remote.Homework.url https://github.com/WW0417/Homework.git # timeout=10
+ > git config --add remote.Homework.fetch +refs/heads/*:refs/remotes/Homework/* # timeout=10
+ > git config remote.Homework.url https://github.com/WW0417/Homework.git # timeout=10
+Fetching upstream changes from https://github.com/WW0417/Homework.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress https://github.com/WW0417/Homework.git +refs/heads/*:refs/remotes/Homework/* # timeout=60
+ > git rev-parse refs/remotes/Homework/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/Homework/Homework/master^{commit} # timeout=10
+Checking out Revision 25f7e4b8538fec418c4073b1f7726ba682aed745 (refs/remotes/Homework/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 25f7e4b8538fec418c4073b1f7726ba682aed745
+Commit message: "-11"
+ > git rev-list --no-walk 0618f424b8deb061b83ef6ca2d2e88bf45e46680 # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins7305527800844507364.sh
++ cd /var/lib/jenkins/jobs/te
++ ./testdeploy.sh
+added manifest
+adding: football.jpg(in = 115806) (out= 115651)(deflated 0%)
+adding: index.jsp(in = 322) (out= 212)(deflated 34%)
+adding: stylesheet.css(in = 141) (out= 123)(deflated 12%)
+源文件成功打包成Homework.war文件
+Redirecting to /bin/systemctl restart tomcat.service
+Finished: SUCCESS

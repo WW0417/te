@@ -1,0 +1,10 @@
+Started on Dec 4, 2018 10:49:00 PM
+Using strategy: Default
+[poll] Last Built Revision: Revision 924e1497c5d5016c0a05fa32c37b4019c18fbaed (refs/remotes/Homework/master)
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git ls-remote -h https://github.com/WW0417/Homework.git # timeout=10
+Found 1 remote heads on https://github.com/WW0417/Homework.git
+[poll] Latest remote head revision on refs/heads/master is: 7a3853ef159fda2fdd47d442d4c37fb585b815aa
+Done. Took 1.8 sec
+Changes found

@@ -1,0 +1,43 @@
+Started by an SCM change
+Building in workspace /var/lib/jenkins/jobs/te/workspace
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/WW0417/Homework.git
+ > git init /var/lib/jenkins/jobs/te/workspace # timeout=10
+Fetching upstream changes from https://github.com/WW0417/Homework.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/WW0417/Homework.git +refs/heads/*:refs/remotes/origin/* # timeout=60
+ > git config remote.origin.url https://github.com/WW0417/Homework.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/WW0417/Homework.git # timeout=10
+Fetching upstream changes from https://github.com/WW0417/Homework.git
+ > git fetch --tags --progress https://github.com/WW0417/Homework.git +refs/heads/*:refs/remotes/origin/* # timeout=60
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a71c5bc9f35b396bb10e4410bca98b83c193f3e5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a71c5bc9f35b396bb10e4410bca98b83c193f3e5
+Commit message: "test jenkins"
+ > git rev-list --no-walk b86069b682b6279bce299d1a008772b898d1125a # timeout=10
+[workspace] $ /bin/sh -xe /tmp/jenkins6956838229683701416.sh
++ echo '任务名称是:te;'
+任务名称是:te;
++ who
+root     pts/0        2018-12-04 22:06 (192.168.72.1)
++ project_name=te
++ warfile_name=Homework
++ sourcename=WebContent
++ file_path=/var/lib/jenkins/jobs/te/workspace
++ rm -rf '/var/lib/jenkins/jobs/te/workspace/Homework*'
++ cd /var/lib/jenkins/jobs/te/workspace/WebContent
++ jar -cvf /var/lib/jenkins/jobs/te/workspace/Homework.war football.jpg index.jsp stylesheet.css
+added manifest
+adding: football.jpg(in = 115806) (out= 115651)(deflated 0%)
+adding: index.jsp(in = 322) (out= 212)(deflated 34%)
+adding: stylesheet.css(in = 141) (out= 123)(deflated 12%)
++ echo 源文件成功打包成Homework.war文件
+源文件成功打包成Homework.war文件
++ cp /var/lib/jenkins/jobs/te/workspace/Homework.war success.war
+Finished: SUCCESS
